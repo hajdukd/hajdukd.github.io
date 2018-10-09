@@ -42,6 +42,6 @@ Ofcourse the reviewer was the person that proposed it back then because that's w
 
 ## Long story short
 
-Most people are lazy by nature. Most of the time they know the correct way of solving a problem but will still take shortcuts in the end. Software industry is no different in this regard.
+Most people are lazy by nature. Generally they know the correct way of solving a problem but will still take shortcuts in the end. Software industry is no different in this regard.
 Things get a little bit more complicated when such a way of thinking sticks for too long - for example in a legacy project.
 You, the person that just started working in it, you can make a difference.
