@@ -2,7 +2,7 @@
 permalink: /bestpractice/:title
 ---
 
-## Few best practices gathered over the years
+# Few best practices gathered over the years
 
 Let's be honest, programmers that care about quality of their work know that code reviews are highly beneficial for it.
 Reasons are plentiful, code reviews:
@@ -19,7 +19,7 @@ Unfortunately, doing a good code review takes a lot of time. Especially when you
 To help some of you ( newer developers ) who are looking for some tips about how to not waste time on and during a code review,
 here are a few best practices i've gathered over the years.
 
-### Predefine Code Review Requirements
+## Predefine Code Review Requirements
 
 In my current TT team (2018) we have a check list which describes requirements which someone has to pass before even asking for a code review.
 There is no point wasting someone's time if those requirements are not met.
@@ -40,7 +40,7 @@ And one additional requirement we have ( mostly for documentation purposes ):
 
 Some of those points can be easily automated via IDE checkstyle or Pull Request pipeline, which even further simplify the task.
 
-### Code Review
+## Code Review
 
 After all requirements for code review are met you can finally dive into it. Beside obvious things like business logic correctness, readability, design, language best practices etc.. Again, to not waste own or someone else's time there are few things to watch out for, like:
 
