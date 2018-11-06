@@ -10,13 +10,13 @@ Reasons are plentiful, code reviews:
 - improve code quality ( readability, design and coverage )
 - serve as a medium to share knowledge ( both ways )
 - decrease number of bugs at an early stage ( when it's easy to fix them )
-- decrease development time of a project
-- improve communication in a team ( f2f )
+- decrease project development time
+- improve team communication ( f2f )
 
 And many more.
 
 Unfortunately, doing a good code review takes a lot of time. Especially when you don't have a lot of experience.
-To help some of you ( newer developers ) who are looking for some tips about how to not waste time on and during a code review,
+To help some of you ( newer developers ) who are looking for some tips about how not to waste time on and during a code review,
 here are a few best practices i've gathered over the years.
 
 ## Predefine Code Review Requirements
@@ -38,7 +38,7 @@ And one additional requirement we have ( mostly for documentation purposes ):
 
 * Commits have a reference to detailed description ( in our case - ticket numbers )
 
-Some of those points can be easily automated via IDE checkstyle or Pull Request pipeline, which even further simplify the task.
+Some of those points can be easily automated via IDE checkstyle or Pull Request pipeline.
 
 ## Code Review
 
