@@ -13,15 +13,13 @@ Reasons are plentiful, code reviews:
 - decrease project development time
 - improve team communication ( f2f )
 
-And many more.
-
 Unfortunately, doing a good code review takes a lot of time. Especially when you don't have a lot of experience.
-To help some of you ( newer developers ) who are looking for some tips about how not to waste time on and during a code review,
-here are a few best practices i've gathered over the years.
+To help some of you ( newer developers ) who are looking for some tips about how not to waste time on and during code reviews,
+here are a few best practices I've gathered over the years.
 
 ## Predefine Code Review Requirements
 
-In my current TT team (2018) we have a check list which describes requirements which someone has to pass before even asking for a code review.
+In my current TT team (2018) we have a checklist which describes requirements which someone has to pass before even asking for a code review.
 There is no point wasting someone's time if those requirements are not met.
 
 The list is as follows:
@@ -42,7 +40,7 @@ Some of those points can be easily automated via IDE checkstyle or Pull Request 
 
 ## Code Review
 
-After all requirements for code review are met you can finally dive into it. Beside obvious things like business logic correctness, readability, design, language best practices etc.. Again, to not waste own or someone else's time there are few things to watch out for, like:
+After all requirements for code review are met you can finally dive into it. Beside obvious things like business logic correctness, readability, design, language best practices etc.. Again, not to waste own or someone else's time there are few things to watch out for, like:
 
 * Being polite - It might sound funny, but if you gonna be a dick to someone, he/she will most likely respond in the same manner. That's just a recipe for disaster. The nicer you are the faster you will get feedback or your remarks will be applied.
 * Taking a good look at tests -  Tests are a software documentation. If tests make no sense or are missing corner cases, it's better to ping-pong the PR. It's highly possible that after reviewee updates the tests, rest of the PR will change significantly.
