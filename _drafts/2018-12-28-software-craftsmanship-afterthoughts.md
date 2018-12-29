@@ -9,10 +9,11 @@ is a pure essence of exactly that - _the guideline_ for such fulfillment.
 Whether you are an experienced developer or completely new to the field, because of a share amount of insight knowledge stored within
 this title, it is a _MUST READ_ position.
 
-## What is a Software Craftsmanship ?
+## What is Software Craftsmanship ?
 
 The idea of work excellence is not new. All kinds of craftsmen honed their skills in a pursuit of the "Master" title.
-This was the case for many medieval callings:
+
+That was the case for many medieval callings:
  - blacksmithing
  - armorsmithing
  - furriery
@@ -32,4 +33,4 @@ That were the old days, but how it looks right now ?
 It is similar, people rediscover that truth over and over. In our case (IT) we want to be proud and recognized for what we do.
 We want to grow together and share. We want to help our clients reach their goals. We want to be seen as _professionals_.
 
-This is the Software Craftsmanship and this is what we should aim at as a community.
+This is Software Craftsmanship and this is what we should aim at as a community.
