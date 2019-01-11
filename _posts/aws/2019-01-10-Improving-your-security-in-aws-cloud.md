@@ -17,10 +17,10 @@ Because of that I've prepared a small list of tips to follow to for anyone who w
     * AWS Access Key and Secret Key - All it takes is to generate them again and invalidate the old ones. I would say doing it on a monthly basis is enough
     * Console Password - Quarterly reset does the job
 - IAM Password Policy
-    * A good thing to have when your Users love an "easy to remember" passwords (looking at you "querty1234"..)
+    * A good thing to have when your users love an _easy to remember_ passwords (looking at you "querty1234"..)
 - Split responsibility - protects from and makes it easier to pinpoint a source of a breach
-    * Users - don't grant them an access to everything there is. Each User should have an access only to required services
-    * Automation - create a separate Users/Roles with only required services access (check out Assume-Role/Instance-Profile API)
+    * Users - don't grant them an access to everything there is. Each user should have an access only to required services
+    * Automation - create a separate users/roles with only required services access (check out Assume-Role/Instance-Profile API)
 - SSH Keys separation - also protects from and makes it easier to pinpoint a source of a breach
     * Don't use a master ssh key as a "general purpose key", instead generate ssh key for each team member
 - S3 buckets
