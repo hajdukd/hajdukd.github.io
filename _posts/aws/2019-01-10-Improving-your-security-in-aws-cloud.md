@@ -12,7 +12,7 @@ Because of that I've prepared a small list of tips to follow to for anyone who w
 * Multi-Factor Authentication (MFA)
     * Root user account - As a root can do pretty much anything he wants, it's better to secure those with an external source of authentication
     A common practice is to at least require Virtual MFA but I would say it's not enough and a Physical U2F [Key](https://www.amazon.com/Yubico-YubiKey-USB-Two-Factor-Authentication/dp/B018Y1Q71M?ref=ast_p_ep) is a lot better
-    * Non-root user accounts - For those at least require Virtual MFA - Microsoft or Google Authenticator are pretty nice for that
+    * Non-root user accounts - For those at least require Virtual MFA - Microsoft or Google Authenticator apps are pretty nice for that
 - Credentials rotation - often
     * AWS Access Key and Secret Key - All it takes is to generate them again and invalidate the old ones. I would say doing it on a monthly basis is enough
     * Console Password - Quarterly reset does the job
