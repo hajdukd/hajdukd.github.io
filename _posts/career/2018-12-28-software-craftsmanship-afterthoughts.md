@@ -25,7 +25,7 @@ and many more.
 
 It was a long and hard process. An apprenticeship often took years and one was not guaranteed to ever finish it with the title.
 
-Sometimes students had to "set off" on a journey to train and hone their skills under multiple masters. That was the only way
+Sometimes students had to "set off" on a journey to train and hone their skills under multiple masters. It was the only way
 to find the perfection they sought.
 
 That were the old days, but how it looks right now ?
