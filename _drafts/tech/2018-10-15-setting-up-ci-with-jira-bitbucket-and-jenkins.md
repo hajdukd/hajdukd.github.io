@@ -1,5 +1,5 @@
 ---
-permalink: /bestpractice/:title
+permalink: /tech/:title
 ---
 
 ## How to save time for stuff that matters ?
