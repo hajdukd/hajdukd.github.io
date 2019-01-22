@@ -7,7 +7,7 @@ This is highly useful in multi-threaded environments. Imagine an object shared b
 using this object in an unknown order while in between the state of that object changes.
 
 Results of such operations would be completely unpredictable and tracking such bugs would be really challenging.
-But when _you know_ your shared objects state cannot be modified no matter what.. that solves a lot of those problems!
+But when _you know_ your shared objects state cannot be modified no matter what.. that solves all of those problems!
 
 ## Immutable objects deserialization with Jackson
 
@@ -18,7 +18,7 @@ There are few ways one can choose to deserialize JSON to an immutable object usi
 
  - Constructor annotated as [@JsonCreator](https://fasterxml.github.io/jackson-annotations/javadoc/2.7/com/fasterxml/jackson/annotation/JsonCreator.html) - requires you to take in all required parameters and annotate them with [@JsonProperty](https://fasterxml.github.io/jackson-annotations/javadoc/2.7/com/fasterxml/jackson/annotation/JsonProperty.html).
  A lot of boilerplate code and numb solution.
- 
+
 ```
     @JsonCreator(mode = JsonCreator.Mode.PROPERTIES)
     public User(@JsonProperty("id") Long id,
@@ -30,6 +30,7 @@ There are few ways one can choose to deserialize JSON to an immutable object usi
     }
 ```
  - Constructor annotated with [@ConstructorProperties](https://docs.oracle.com/javase/8/docs/api/java/beans/ConstructorProperties.html) (Jackson 2.7.0+) - similar to @JsonCreator but limits the number of boilerplate to specifying only properties (order matters).
+
 ```
     @ConstructorProperties({"id", "firstName", "lastName"})
     public User(Long id,
@@ -41,6 +42,7 @@ There are few ways one can choose to deserialize JSON to an immutable object usi
     }
 ```
 - Custom _deserializer_ - custom implementation of [StdDeserializer](https://fasterxml.github.io/jackson-databind/javadoc/2.7/com/fasterxml/jackson/databind/deser/std/StdDeserializer.html), which can be registered via [@JsonDeserialize](https://fasterxml.github.io/jackson-databind/javadoc/2.7/com/fasterxml/jackson/databind/annotation/JsonDeserialize.html) annotation on an immutable object class or via mapper module deserializer registration.
+
 ```
     public class UserDeserializer extends StdDeserializer<User> {
     
@@ -55,6 +57,7 @@ There are few ways one can choose to deserialize JSON to an immutable object usi
     }
 ```
 - Custom mix-in - which uses similar approach to @JsonCreator but is registered differently ([docs](https://fasterxml.github.io/jackson-databind/javadoc/2.7/com/fasterxml/jackson/databind/ObjectMapper.html#addMixIn(java.lang.Class,%20java.lang.Class)). This one is especially good in case you have no ownership on immutable object class and cannot extend it.
+
 ```
     public abstract class UserMixIn {
 
