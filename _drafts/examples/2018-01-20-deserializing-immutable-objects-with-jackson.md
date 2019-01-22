@@ -7,7 +7,7 @@ This is highly useful in multi-threaded environments. Imagine an object shared b
 using this object in an unknown order while in between the state of that object changes.
 
 Results of such operations would be completely unpredictable and tracking such bugs would be really challenging.
-But when _you know_ your shared objects state cannot be modified no matter what.. that solves all of those problems!
+But when _you know_ your shared objects state cannot be modified no matter what.. that solves a lot of those problems!
 
 ## Immutable objects deserialization with Jackson
 
@@ -90,3 +90,5 @@ If you are not familiar with Lombok i would highly recommend checking it out. [H
 Out of all of presented solutions, like i said, my favourite is the builder pattern. But it's worth noting that each one of those has a unique use case. For mix-in it was a lack of extension possibilities.
 
 Find by yourself what suits your use case the best.
+
+Source code can be found on my [github](https://github.com/hajdukd/samples/tree/master/immutabledeserializationjacksonsample).
