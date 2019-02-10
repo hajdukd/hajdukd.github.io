@@ -10,9 +10,9 @@ Let's start with a simple example:
 void print(final int score){...}  
 ```
 What can we say about this method ? Well, for sure we can say that the `score` value cannot be changed
-through the course of method `print(...)` implementation. Some may even say that it is a pretty good way to protect
+through the course of method `print(...)` implementation. Some may even say it is a pretty good way to protect
 against someone even trying to do such a thing. That it creates some kind of a "safety net" or documentation for
-a developer using such a method.
+a developer using that method.
 
 But, there are always some "buts".. Sure it sounds great for primitive types and immutable objects, but it does not help
 much in case of mutable objects and is completely redundant when using functional programming.
@@ -22,7 +22,7 @@ Goooal!! Ronaldo scores another one for his team! Time to print the new score on
 void print(final Score score){...}
 ```
 What guarantee do i have that the mutable object `score` won't be modified by a corrupted arbiter ?
-Huh, that's easy, just read the source code! Oh.. documentation point didn't stand for long.
+Huh, that's easy, just read the source code! Woops.. documentation point didn't stand for long.
 
 At least we don't have to worry that the reference to the `score` object will change!
 
@@ -56,13 +56,13 @@ void print(Score score){...}
 ```
 Why is that ? The `final` keyword is **not** considered a part of a method signature.
 That's pretty crucial in cases when you allow others to extend your code. We don't want our important `final` to get lost
-along the way, don't we.. ?
+along the way, don't we ?
 
-Funny thing is that it's already lost on the compilation time. Decompiled `print(...)` method signature looks like this:
+Funny thing.. it's already lost on the compilation time. Decompiled `print(...)` method signature looks like this:
 ```
 void print(Score score) {...}
 ```
-Which pretty much **forces** us to download the source code every time we want to check creator's intent.
+Which pretty much **forces** us to download the source code every time we want to check creator's intentions.
 
 ### _"But, but what if my method is very long and i have to be sure reference won't change ?"_
  
@@ -77,9 +77,12 @@ which won't even touch the param directly but will produce erroneous outcomes.
 
 ### How all of this connects to the `final` on method input parameters?
 
-(For me) It makes sense to use it only on primitive types or immutable objects. In all other cases `final` works only as a half measure.
+(For me) It makes sense to use it only on primitive types or immutable objects.
+In case you follow OOP (Object Oriented Programming) paradigm, operating on primitive types directly contradicts with it.
+If you prefer FP (Functional Programming), you also often get immutability for free.
+In all other cases `final` works only as a half-measure.
 
 Clean code does a lot better job at solving the same issue. So why not simply favour what is best and also improve readability
 of method signatures ?
 
-What if i told you that clean and self-documenting code doesn't need such half measures ?
+What if i told you that clean and self-documenting code doesn't need such half-measures ?
