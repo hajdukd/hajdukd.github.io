@@ -43,7 +43,7 @@ and the corrupted arbiter at this point has lost his last chance to change the `
 Reference to the object `score` inside of method `print(...)` is not the same reference as the one from outside of it.
 **It is a copy** which points to the same `score` object.
 
-#### Now about another cool feature of Java related to `final` modifier. 
+### Now about another cool feature of Java related to `final` modifier. 
 
 In the second half of the match, the score board was replaced with a new one, which overrides `print(...)` method.
 Initial method signature of the `print(...)` method was:
@@ -64,7 +64,7 @@ void print(Score score) {...}
 ```
 Which pretty much **forces** us to download the source code every time we want to check a developer's intent.
 
-#### _"But, but what if my method is very long and i have to be sure reference won't change ?"_
+### _"But, but what if my method is very long and i have to be sure reference won't change ?"_
  
 Keyword `final` on method input parameters was supposed to help with this issue. But it's actually only a half measure.
 
@@ -74,7 +74,7 @@ a self documenting code. Clean code, which is easy to understand and validate.
 If your method is very long and complex, `final` keyword won't fix your problems. It may even create that **false** feeling
 of a "safety net". Which is even worse.
 
-#### How all of this connects to the `final` on method input parameters?
+### How all of this connects to the `final` on method input parameters?
 
 (For me) It makes sense to use it only on primitive types or immutable objects. In all other cases `final` works only as a half measure.
 
