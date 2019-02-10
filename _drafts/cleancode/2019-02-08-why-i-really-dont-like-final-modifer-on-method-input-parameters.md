@@ -2,8 +2,8 @@
 permalink: /cleancode/:title
 ---
 
-Recently i had an internal discussion whether or not we should use `final` modifier on input parameters of methods.
-It was hard for me to hastily gather all arguments i have against this practice. This post should clear things out.
+Recently I had an internal discussion whether or not we should use `final` modifier on input parameters of methods.
+It was hard for me to hastily gather all arguments I have against this practice. This post should clear things out.
 
 Let's start with a simple example:
 ```
@@ -12,7 +12,7 @@ void print(final int score){...}
 What can we say about this method ? Well, for sure we can say that the `score` value cannot be changed
 through the course of method `print(...)` implementation. Some may even say it is a pretty good way to protect
 against someone even trying to do such a thing. That it creates some kind of a "safety net" or documentation for
-a developer using that method.
+a developer using the method.
 
 But, there are always some "buts".. Sure it sounds great for primitive types and immutable objects, but it does not help
 much in case of mutable objects and is completely redundant when using functional programming.
@@ -21,7 +21,7 @@ Goooal!! Ronaldo scores another one for his team! Time to print the new score on
 ```
 void print(final Score score){...}
 ```
-What guarantee do i have that the mutable object `score` won't be modified by a corrupted arbiter ?
+What guarantee do I have that the mutable object `score` won't be modified by a corrupted arbiter ?
 Huh, that's easy, just read the source code! Woops.. documentation point didn't stand for long.
 
 At least we don't have to worry that the reference to the `score` object will change!
@@ -64,7 +64,7 @@ void print(Score score) {...}
 ```
 Which pretty much **forces** us to download the source code every time we want to check creator's intentions.
 
-### _"But, but what if my method is very long and i have to be sure reference won't change ?"_
+### _"But, but what if my method is very long and I have to be sure reference won't change ?"_
  
 Keyword `final` on method input parameters was supposed to help with this issue. But it's actually only a half measure.
 
@@ -85,4 +85,4 @@ In all other cases `final` works only as a half-measure.
 Clean code does a lot better job at solving the same issue. So why not simply favour what is best and also improve readability
 of method signatures ?
 
-What if i told you that clean and self-documenting code doesn't need such half-measures ?
+What if I told you that clean and self-documenting code doesn't need such half-measures ?
