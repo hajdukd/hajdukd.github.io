@@ -58,21 +58,22 @@ Why is that ? The `final` keyword is **not** considered a part of a method signa
 That's pretty crucial in cases when you allow others to extend your code. We don't want our important `final` to get lost
 along the way, don't we.. ?
 
-Funny thing is that it's already lost on the compilation time. Decompiled `print(...)` method looks like this:
+Funny thing is that it's already lost on the compilation time. Decompiled `print(...)` method signature looks like this:
 ```
 void print(Score score) {...}
 ```
-Which pretty much **forces** us to download the source code every time we want to check a developer's intent.
+Which pretty much **forces** us to download the source code every time we want to check creator's intent.
 
 ### _"But, but what if my method is very long and i have to be sure reference won't change ?"_
  
 Keyword `final` on method input parameters was supposed to help with this issue. But it's actually only a half measure.
 
-Whether we use an external library or we write our own - documentation is important. And there is nothing better than
-a self documenting code. Clean code, which is easy to understand and validate.
+Whether we use an external library or we write our own - documentation is important.
+There's nothing better than a self-documenting and easy to validate code.
 
 If your method is very long and complex, `final` keyword won't fix your problems. It may even create that **false** feeling
-of a "safety net". Which is even worse.
+of a "safety net". Which is even worse. There is a multitude of things that can happen along the method implementation,
+which won't even touch the param directly but will produce erroneous outcomes.
 
 ### How all of this connects to the `final` on method input parameters?
 
@@ -81,4 +82,4 @@ of a "safety net". Which is even worse.
 Clean code does a lot better job at solving the same issue. So why not simply favour what is best and also improve readability
 of method signatures ?
 
-What if i told you that clean and self documenting code doesn't need such half measures ?
+What if i told you that clean and self-documenting code doesn't need such half measures ?
