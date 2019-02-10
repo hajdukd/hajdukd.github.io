@@ -46,7 +46,7 @@ Reference to the object `score` inside of method `print(...)` is not the same re
 ### Now about another cool feature of Java related to `final` modifier. 
 
 In the second half of the match, the score board was replaced with a new one, which overrides `print(...)` method.
-Initial method signature of the `print(...)` method was:
+Initial signature of the `print(...)` method was:
 ```
 void print(final Score score){...}
 ```
