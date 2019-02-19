@@ -5,7 +5,7 @@ permalink: /aws/:title
 Recently I read a [post](https://www.reddit.com/r/aws/comments/8rj9ep/my_aws_account_was_hacked/) on Reddit about some poor soul getting his AWS Account hacked.
 Situations like this show that you got to have at least some kind of understanding when it comes to security to not get burnt.
 Claiming otherwise won't take you anywhere.
-Because of that I've prepared a small list of tips to follow to for anyone who would like to improve his AWS account security.
+Because of that I've prepared a small list of tips to follow for anyone who would like to improve his/her AWS account security.
 
 ## Few tips for account management
 
