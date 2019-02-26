@@ -98,4 +98,4 @@ Out of all of presented solutions, like i said, my favourite is the builder patt
 
 Find by yourself what suits your use case the best.
 
-Source code can be found on my [github](https://github.com/hajdukd/samples/tree/master/immutabledeserializationjacksonsample).
+Samples source code can be found on my [github](https://github.com/hajdukd/samples/tree/master/immutabledeserializationjacksonsample).
